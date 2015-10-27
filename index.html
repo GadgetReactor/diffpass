@@ -301,9 +301,51 @@ body {
  #about h1 {
  color: #00297A;
  }
+ 
+.header .inner {
+max-width: 900px;
+padding: 0 10px;
+margin: 0 auto;
+height: 60px;
+}
+
+.header {
+position: fixed;
+z-index: 10;
+top: 0;
+width: 100%;
+background: rgba(0, 0, 0, 0.2);
+height: 60px;
+-webkit-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+-webkit-transition: all 0.2s;
+transition: all 0.2s;
+}
+
+.header .logo {
+background: url(https://gadgetreactor.github.io/holeeday/images/logo.png) center no-repeat;
+float: left;
+display: block;
+height: 60px;
+width: 60px;
+-webkit-background-size: 60px 60px;
+background-size: 60px 60px;
+}
+ 
 </style>
 </head>
 <body>
+
+<nav class='header fadein transparent'>
+<div class='background'></div>
+<div class='wrapper'>
+	<div class='inner'>
+		<a class='logo' href='https://seanseah.github.com'></a>
+	</div>
+</div>
+</nav>
+	
     <div class="login">
         <div class="login-screen">
             <div class="app-title">
